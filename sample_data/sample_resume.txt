@@ -1,0 +1,12 @@
+Rahul Sharma
+rahul.sharma@example.com | +91 98765 43210 | github.com/rahulsharma-dev
+EDUCATION
+B.Tech in Computer Science, ABC Institute of Technology, Jaipur (2022 - 2026), CGPA 8.1
+SKILLS
+Python, Java, HTML, CSS, MySQL, Git
+PROJECTS
+Library Management System- Worked on a system to manage books and students using Java and MySQL- Responsible for the database design and various backend tasks
+Weather App- Made a weather website using HTML, CSS and JavaScript- Used an API to show weather of cities
+EXPERIENCE
+Web Development Intern, XYZ Startup (Jun 2025 - Aug 2025)- Helped with fixing bugs in the company website- Participated in team meetings and learned React
+ACHIEVEMENTS- Participated in college hackathon

@@ -1,0 +1,7 @@
+Data Analyst Intern
+We are looking for a Data Analyst Intern to join our analytics team.
+Responsibilities: clean and analyze datasets, build dashboards, write SQL queries,
+and present insights to the business team.
+Requirements: Python (Pandas, NumPy), SQL, Excel, Power BI or Tableau,
+basic statistics, good communication skills.
+Nice to have: Matplotlib, Git, experience with real-world datasets.
