@@ -1,0 +1,43 @@
+# AI Resume Assistant Agent
+An AI agent that reviews a student's resume against one or more target roles and
+tells them exactly how to improve it. Built for hackathon problem statement PS-03.
+## The problem
+Students often have a resume but do not know whether it shows the right skills for a
+specific internship. A resume that works for one role may hide the skills another role
+needs, and weak bullet points or missing sections are hard to spot on your own.
+## Our solution
+Upload a resume (PDF or pasted text), enter a job title or a full job description, and the
+agent produces:- a **role match score** with matched and missing skills- a **completeness report** (12 checks, scored out of 100)- **specific improvement suggestions** and **rewritten bullets**- a **comparison across up to 3 roles**- a **structured final review** you can download
+## How the agent works
+1. **Planner** decides the steps (1 role vs several roles).
+2. **Tools** (each does one job): `parse_resume`, `analyze_role`, `skill_match`,
+   `completeness_report`, `find_weak_bullets`, `improve`, `final_review`.
+3. **Grounding**: scores come from plain code, not from the AI's opinion.
+4. **Reflection loop**: a *critic* step checks the rewritten content for invented facts
+   and triggers a revision if it finds any.
+5. **Memory + trace**: the agent remembers the parsed resume and logs every step
+   (see the "Agent trace" tab).
+## Tech stack
+Python, Streamlit (UI), Google Gemini API (free tier), pypdf (PDF reading).
+## Project structure
+| File | Purpose |
+|------|---------|
+| `app.py` | Streamlit web interface |
+| `agent.py` | Agent: planning, tool calls, critic loop, trace |
+| `tools.py` | Non-AI tools: PDF reading, skill matching, completeness checks |
+| `llm.py` | Gemini API wrapper (retries + JSON parsing) |
+| `check_setup.py` | Tests your API key |
+## Setup
+1. Install Python 3.10+.
+2. `python -m venv venv` then activate it (Windows: `venv\Scripts\activate`).
+3. `pip install -r requirements.txt`
+4. Get a free key from Google AI Studio, copy `.env.example` to `.env` and paste the key.
+5. `python check_setup.py` (should print SETUP OK)
+6. `streamlit run app.py`
+## Demo
+Use the files in `sample_data/`.
+Live app: <paste your deployed link here>
+## Limitations and future work- Scanned (image-only) PDFs cannot be read; paste the text instead.- Skill matching is keyword-based; we plan to add semantic matching.- Export the improved resume as a formatted PDF/DOCX.
+
+
+<ROONI KUMARI>
